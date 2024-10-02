@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argocd-kube-deploy
+  name: argocd-kube-deploy # kubectl deploymenet 이름을 의미함.
 spec:
   replicas: 3
   selector:
     matchLabels:
-      run: argocd-kube
+      run: argocd-kube # template metadata labels 이름을 의미함.
   template:
     metadata:
       labels:

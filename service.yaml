@@ -6,5 +6,5 @@ spec:
   ports:
   - port: 80
   selector:
-    run: argocd-kube
+    run: argocd-kube # selector는 전부 labels 부분을 참고한다. 따라서 기존 deployment 부분과 동일하게 맞춰준다.
   type: LoadBalancer
